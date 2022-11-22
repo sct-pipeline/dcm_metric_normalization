@@ -1,1 +1,1 @@
-# dcm_metric_normalization
+# DCM metric normalization
