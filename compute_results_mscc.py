@@ -158,6 +158,8 @@ def gen_chart_corr_mjoa_mscc(df, path_out=None):
 
     logger.info('MSCC: Spearmans r = {} and p = {}'.format(r_mscc, p_mscc))
     logger.info('MSCC norm: Spearmans r = {} and p = {}'.format(r_mscc_norm, p_mscc_norm))
+    plt.grid(color='lightgrey')
+
     sns.regplot(x=x_vals, y=y_vals_mscc, ci=None, label='MSCC')
     sns.regplot(x=x_vals, y=y_vals_mscc_norm, color='crimson', ci=None, label='MSCC_norm')
     #for i, txt in enumerate(df['subject'].tolist()):
